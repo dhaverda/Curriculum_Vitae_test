@@ -283,24 +283,27 @@ section > div{
   else
   {
     curriculum.style.display = "block";
+    motivation.style.display = "none";
   }
 })
 toggle2.addEventListener("click", () => {
   if(getComputedStyle(motivation).display != "none")
   {
     motivation.style.display = "none";
+    
   } 
   else
   {
     motivation.style.display = "block";
+    curriculum.style.display = "none";
   }
 })}
 </script>
 <body>
     <header>
         <h1>Candidature spontann&eacute;e pour une alternance</h1>
-        <button id="toggle2">Curriculum Vitae</button>
-        <button id="toggle1">Lettre de motivation</button>
+        <button id="toggle1">Curriculum Vitae</button>
+        <button id="toggle2">Lettre de motivation</button>
     </header>
     
     <section>
@@ -344,7 +347,7 @@ toggle2.addEventListener("click", () => {
     </section>
     <div id="motivation">
         <section>
-            
+
         </section>
     </div>
     <div id="curriculum">

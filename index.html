@@ -25,11 +25,9 @@ a{
     text-decoration: none;
     color: #000;
 }
-#motivation
-{
-    display: hidden;
+meter{
+    width: 100%;
 }
-
 /*HEADER & FOOTER*/
 header, footer{
     width: 100%;
@@ -229,12 +227,15 @@ section > div{
 
 /*VERSION BUREAU DU CV*/
 @media screen and (min-width: 980px){
+    meter{
+        width: 100%;
+    }
     section{
         width: 80%;
         box-shadow: 0px 0px 10px #bbb;
     }
     a:hover{
-        color: #EA0;
+        font-weight: bold;
     }
     header h1{
         width: 80%;
@@ -301,7 +302,7 @@ section > div{
             </div>
             <div class="contact-flex">
                 <p><b>Téléphone :</b></p>
-                <p><a href="tel:+33610567857"></a>06 10 56 78 57</p>
+                <p><a href="tel:+33610567857">06 10 56 78 57</a></p>
             </div>
             <div class="contact-flex">
                 <p><b>Mail :</b> </p>
@@ -309,7 +310,7 @@ section > div{
             </div>
             <div class="contact-flex">
                 <p><b>Permis :</b></p>
-                <p>B / A2 (en cours)</p>
+                <p>B / <a>A2</a> (en cours)</p>
             </div>
             <div class="social">
                 <a href="https://www.facebook.com/profile.php?id=100010020730851"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" alt="Logo Facebook"></a>
@@ -408,31 +409,40 @@ section > div{
     <section>
         <h2>Compétences</h2>
         <h3 class="h3gauche">Professionnelles</h3>
-        <div class="comp">
+        <div class="comp2">
             <p>HTML / CSS</p>
-            <div class="conteneur-barre"><span class="barre c100"></span></div>
+            <P>70%</P>
+            <meter  min="0" max="100"
+                    low="50" high="80" optimum="99"
+                    value="70">70%
+            </meter>
         </div>
-        <div class="comp">
+        <div class="comp2">
             <p>PHP / MySQL</p>
-            <div class="conteneur-barre"><span class="barre c95"></span></div>
+            <p>50%</p>            
+            <meter  min="0" max="100"
+                    low="50" high="80" optimum="99"
+                    value="49">50%
+            </meter>
         </div>
-        <div class="comp">
+        <div class="comp2">
             <p>JavaScript</p>
-            <div class="conteneur-barre"><span class="barre c90"></span></div>
+            <p>50%</p>
+            <meter  min="0" max="100"
+                    low="50" high="80" optimum="99"
+                    value="49">50%
+            </meter>
         </div>
-        <div class="comp">
-            <p>SEO</p>
-            <div class="conteneur-barre"><span class="barre c100"></span></div>
-        </div>
+        
         <h3 class="h3gauche">Personnelles</h3>
         <div class="comp2">
             <p>Créativité</p>
-            <p>90%</p>
-            <div class="conteneur-barre2"><span class="barre c90"></span></div>
+            <p>95%</p>
+            <div class="conteneur-barre2"><span class="barre c95"></span></div>
         </div>
         <div class="comp2">
             <p>Adaptation</p>
-            <p>85%</p>
+            <p>100%</p>
             <div class="conteneur-barre2"><span class="barre c100"></span></div>
         </div>
         <div class="comp2">
@@ -441,9 +451,9 @@ section > div{
             <div class="conteneur-barre2"><span class="barre c95"></span></div>
         </div>
         <div class="comp2">
-            <p>Pédagogie</p>
-            <p>95%</p>
-            <div class="conteneur-barre2"><span class="barre c95"></span></div>
+            <p>Polyvalence</p>
+            <p>90%</p>
+            <div class="conteneur-barre2"><span class="barre c90"></span></div>
         </div>
     </section>
     

@@ -273,32 +273,10 @@ section > div{
     }
 }
 </style>
-<script>
-    window.onload=function(){
-    let toggle1 = document.getElementById("toggle1")
-    let toggle2 = document.getElementById("toggle2")
-    let curriculum = document.getElementById("curriculum")
-    let motivation = document.getElementById("motivation")
-    toggle1.addEventListener("click", () => {
-  if(getComputedStyle(curriculum).display == "none")
-  {
-    curriculum.style.display = "block";
-    motivation.style.display = "none";
-  }
-})
-toggle2.addEventListener("click", () => {
-  if(getComputedStyle(motivation).display == "none")
-  {
-    motivation.style.display = "block";
-    curriculum.style.display = "none";
-  }
-})}
-</script>
+
 <body>
     <header>
         <h1>Candidature spontann&eacute;e pour une alternance</h1>
-        <button id="toggle1">Curriculum Vitae</button>
-        <button id="toggle2">Lettre de motivation</button>
     </header>
     
     <section>
@@ -340,16 +318,7 @@ toggle2.addEventListener("click", () => {
             </div>
         </div>
     </section>
-    <div id="motivation" >
-        <section style="display: hidden">
-            <p>Madame, Monsieur,</p><br><br>
-            <p>Actuellement en reconversion professionnelle, je souhaite dès la rentrée prochaine effectuer une formation de CAP mécanique Moto au sein de l’IREAM à Amiens. Pour être mieux formé au métier de mécanicien moto, j’ai décidé de prendre la voie de l’alternance. C’est pour cela que je suis à la recherche une entreprise qui me prmettrait d’allier le côté théorique et le côté pratique.</p>
-            <p>Sérieux, curieux et motivé, je possède les qualités d’adaptation indispensables à la réussite d’une formation en alternance.</p>
-            <p>Travailler en alternance dans votre entreprise me permettrait de mettre en pratique les notions étudiées et de proposer à mes futurs employeurs une solide expérience professionnelle.</p>
-            <p>Je vous remercie par avance de l’attention que vous porterez à cette candidature. Je reste à votre disposition pour tout renseignement complémentaire.</p>
-            <p>Cordialement, Matthieu Hédoin
-        </section>
-    </div>
+    
     <div id="curriculum">
     <section>
         <h2>Expériences professionnelles</h2>

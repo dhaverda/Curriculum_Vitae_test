@@ -280,14 +280,14 @@ section > div{
     let curriculum = document.getElementById("curriculum")
     let motivation = document.getElementById("motivation")
     toggle1.addEventListener("click", () => {
-  if(getComputedStyle(curriculum).display != "none")
+  if(getComputedStyle(curriculum).display == "none")
   {
     curriculum.style.display = "block";
     motivation.style.display = "none";
   }
 })
 toggle2.addEventListener("click", () => {
-  if(getComputedStyle(motivation).display != "none")
+  if(getComputedStyle(motivation).display == "none")
   {
     motivation.style.display = "block";
     curriculum.style.display = "none";

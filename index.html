@@ -268,9 +268,22 @@ section > div{
     }
 }
 </style>
+<script>
+    let toggle1 = document.getElementById("toggle1")
+    let toggle2 = document.getElementById("toggle2")
+    let curriculum = document.getElementById("curriculum")
+    /*let toggle1 = document.getElementById("toggle1")*/
+    toggle1.addEventListener("click",() => {
+        if(getComputedStyle(curriculum).display != "none"){
+            curriculum.style.display = "none";
+        }else {
+            curriculum.style.display = "block";
+        }
+    })
+</script>
 <body>
     <header>
-        <h1>Candidature sponatnn&eacute;e pour une alternance</h1>
+        <h1>Candidature spontann&eacute;e pour une alternance</h1>
         <button id="toggle1">Curriculum Vitae</button>
         <button id="toggle2">Lettre de motivation</button>
     </header>

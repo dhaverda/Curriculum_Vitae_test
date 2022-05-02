@@ -273,13 +273,13 @@ section > div{
     let toggle2 = document.getElementById("toggle2")
     let curriculum = document.getElementById("curriculum")
     /*let toggle1 = document.getElementById("toggle1")*/
-    toggle1.addEventListener("click",() => {
-        if(getComputedStyle(curriculum).display != "none"){
-            curriculum.style.display = "none";
-        }else {
-            curriculum.style.display = "flex";
-        }
-    })
+    toggle1.addEventListener("click", () => {
+  if(getComputedStyle(curriculum).display != "none"){
+    curriculum.style.display = "none";
+  } else {
+    curriculum.style.display = "block";
+  }
+})
 </script>
 <body>
     <header>

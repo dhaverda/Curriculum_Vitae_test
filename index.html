@@ -278,21 +278,12 @@ section > div{
     toggle1.addEventListener("click", () => {
   if(getComputedStyle(curriculum).display != "none")
   {
-    curriculum.style.display = "none";
-  } 
-  else
-  {
     curriculum.style.display = "block";
     motivation.style.display = "none";
   }
 })
 toggle2.addEventListener("click", () => {
   if(getComputedStyle(motivation).display != "none")
-  {
-    motivation.style.display = "none";
-    
-  } 
-  else
   {
     motivation.style.display = "block";
     curriculum.style.display = "none";
